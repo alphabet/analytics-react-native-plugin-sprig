@@ -41,7 +41,9 @@
   },
   "homepage": "https://github.com/UserLeap/analytics-react-native-plugin-sprig#readme",
   "peerDependencies": {
-    "@segment/analytics-react-native": "*",
+    "@segment/analytics-react-native": "*"
+  },
+  "dependencies": {
     "react-native-userleap": "2.8.4"
   },
   "devDependencies": {
