@@ -7,19 +7,13 @@
 Please make sure that your product currently uses segment analytics in your application. 
 If you do not currently, but want to get started, please checkout [Segment's documentation](https://segment.com/docs/connections/sources/catalog/libraries/mobile/react-native/#plugin-architecture). Or follow Segment's [instructions on github](https://github.com/segmentio/analytics-react-native#installation).
 
-
 ## Installation
 
 You need to install the `@sprig-technologies/analytics-react-native-plugin-sprig` and the `react-native-userleap` dependency.
-
-Using NPM:
-```bash
-npm install --save @sprig-technologies/analytics-react-native-plugin-sprig react-native-userleap
-```
-
-Using Yarn:
 ```bash
 yarn add @sprig-technologies/analytics-react-native-plugin-sprig react-native-userleap
+# or
+npm install --save @sprig-technologies/analytics-react-native-plugin-sprig react-native-userleap
 ```
 
 Run `pod install` after the installation to autolink the Sprig SDK.
