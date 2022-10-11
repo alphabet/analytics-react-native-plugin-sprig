@@ -1,6 +1,12 @@
 # @segment/analytics-react-native-plugin-sprig
 
-`DestinationPlugin` for [Sprig](https://docs.sprig.com). Wraps [`react-native-userleap`](https://www.npmjs.com/package/react-native-userleap).
+`DestinationPlugin` for [Sprig](https://www.sprig.com). This is a segment analytics plugin that wraps [`react-native-userleap`](https://www.npmjs.com/package/react-native-userleap).
+
+## Prerequisite
+
+Please make sure that your product currently uses segment analytics in your application. 
+If you do not currently, but want to get started, please checkout [Segment's documentation](https://segment.com/docs/connections/sources/catalog/libraries/mobile/react-native/#plugin-architecture). Or follow Segment's [instructions on github](https://github.com/segmentio/analytics-react-native#installation).
+
 
 ## Installation
 
@@ -20,15 +26,12 @@ Run `pod install` after the installation to autolink the Sprig SDK.
 
 ## Usage
 
-Follow the [instructions for adding plugins](https://github.com/segmentio/analytics-react-native#adding-plugins) on the main Analytics client:
-
 In your code where you initialize the analytics client call the `.add(plugin)` method with an `SprigPlugin` instance. 
 
 ```ts
-// app.js
+// App.js
 
 import { createClient } from '@segment/analytics-react-native';
-
 import { SprigPlugin } from '@sprig-technologies/analytics-react-native-plugin-sprig';
 
 const segmentClient = createClient({
@@ -39,14 +42,13 @@ const plugin = new SprigPlugin();
 
 segmentClient.add({ plugin });
 ```
+After this set up, any segment `track` and `identify` functionalities will also forward the events and identify the user id and attributes to Sprig respectively. The users will automatically see the survey if they are eligible without additional work. 
+
+Follow the [instructions for adding plugins](https://github.com/segmentio/analytics-react-native#adding-plugins) on the Analytics client for segment related documentations.
 
 ## Support
 
-Please use Github issues, Pull Requests, or feel free to reach out to our [support team](https://segment.com/help/).
-
-## Integrating with Segment
-
-Interested in integrating your service with us? Check out our [Partners page](https://segment.com/partners/) for more details.
+Please use Github issues, Pull Requests, or feel free to reach out to our [support team](https://docs.sprig.com/docs/support).
 
 ## License
 Please see LICENSE file
