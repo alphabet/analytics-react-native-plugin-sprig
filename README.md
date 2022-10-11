@@ -26,7 +26,7 @@ Run `pod install` after the installation to autolink the Sprig SDK.
 
 ## Usage
 
-In your code where you initialize the analytics client call the `.add(plugin)` method with an `SprigPlugin` instance. 
+In your code where you initialize the analytics client call the `.add({ plugin })` method with an `SprigPlugin` instance. 
 
 ```ts
 // App.js
