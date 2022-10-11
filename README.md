@@ -46,6 +46,10 @@ After this set up, any segment `track` and `identify` functionalities will also 
 
 Follow the [instructions for adding plugins](https://github.com/segmentio/analytics-react-native#adding-plugins) on the Analytics client for segment related documentations.
 
+## Example
+
+We included a simple react native app that implements the plugin
+
 ## Support
 
 Please use Github issues, Pull Requests, or feel free to reach out to our [support team](https://docs.sprig.com/docs/support).
