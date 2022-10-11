@@ -48,7 +48,7 @@ Follow the [instructions for adding plugins](https://github.com/segmentio/analyt
 
 ## Example
 
-We included a simple react native app that implements the plugin
+We included a simple react native app that implements the plugin under `./example` 
 
 ## Support
 
