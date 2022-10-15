@@ -3,6 +3,7 @@
 This is a test app for Sprig's analytics react native plugin.
 
 ## Get Started
+In the example directory run the following commands
 
 ```
 npm i
