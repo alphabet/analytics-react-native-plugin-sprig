@@ -11,7 +11,11 @@ export default (event: TrackEventType) => {
         event.userId,
         event.anonymousId,
         event.properties,
-        Sprig.presentSurvey
+        (state: string) => {
+          if (state === "READY") {
+            Sprig.presentSurvey();
+          }
+        }
       );
     else
       Sprig.trackIdentifyAndPresent(
