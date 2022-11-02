@@ -5,12 +5,12 @@ export default (event: TrackEventType) => {
   if (event.event === SIGN_OUT_EVENT) {
     Sprig.logout();
   } else {
-    if (Object.keys(event.properties).length)
+    if (Object.keys(event.properties!).length)
       Sprig.trackWithProperties(
         event.event,
         event.userId,
         event.anonymousId,
-        event.properties,
+        event.properties!,
         (state: string) => {
           if (state === "READY") {
             Sprig.presentSurvey();
