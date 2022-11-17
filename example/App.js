@@ -95,7 +95,7 @@ const App: () => Node = () => {
               <View style={styles.sectionDescription}>
                 <TouchableOpacity
                   onPress={() => {
-                    segmentClient.track("YOUR_SPRIG_SURVEY_EVENT", {
+                    segmentClient.track("Track Segment React Native", {
                       isFreePlan: false,
                       age: 45,
                       planName: "Premium",
