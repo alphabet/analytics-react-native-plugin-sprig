@@ -6,3 +6,5 @@ updates:
       interval: 'daily'
     allow:
       - dependency-type: "production"
+    reviewers:
+      - "UserLeap/sdk-new-initiatives"
