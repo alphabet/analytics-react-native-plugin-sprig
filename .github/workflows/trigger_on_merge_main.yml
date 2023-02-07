@@ -11,5 +11,5 @@ jobs:
   create-release-and-tag:
     uses: UserLeap/common-workflows/.github/workflows/_generic_create_release_tag.yml@main
     with:
-      release_url: https://api.github.com/repos/UserLeap/analytics-react-native-plugin-sprig-test/releases
+      release_url: https://api.github.com/repos/UserLeap/analytics-react-native-plugin-sprig/releases
     secrets: inherit
