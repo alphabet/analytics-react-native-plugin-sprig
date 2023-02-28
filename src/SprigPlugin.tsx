@@ -27,7 +27,7 @@ export class SprigPlugin extends DestinationPlugin {
     }
 
     if (!this.hasInitialized && sprigSettings.envId) {
-      Sprig.configure(sprigSettings.envId);
+      Sprig.configure(sprigSettings.envId, { source: 'react-native-segment' });
       this.hasInitialized = true;
     }
   }
