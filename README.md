@@ -20,7 +20,7 @@ Run `pod install` after the installation to autolink the Sprig SDK.
 
 ## Usage
 
-In your code where you initialize the analytics client call the `.add({ plugin })` method with an `SprigPlugin` instance. 
+In your code where you initialize the analytics client call the `.add({ plugin: sprigPlugin })` method with a `SprigPlugin` instance. 
 
 ```ts
 // App.js
@@ -32,9 +32,9 @@ const segmentClient = createClient({
   writeKey: 'SEGMENT_WRITE_KEY'
 });
 
-const plugin = new SprigPlugin();
+const sprigPlugin = new SprigPlugin();
 
-segmentClient.add({ plugin });
+segmentClient.add({ plugin: sprigPlugin });
 ```
 After this set up, any segment `track` and `identify` functionalities will also forward the events and identify the user id and attributes to Sprig respectively. The users will automatically see the survey if they are eligible without additional work. 
 
